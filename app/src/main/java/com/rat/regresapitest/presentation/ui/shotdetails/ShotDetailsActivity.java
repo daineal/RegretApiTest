@@ -250,7 +250,7 @@ public class ShotDetailsActivity extends BaseMvpActivity implements ShotDetailsV
     public void showStorageAccessRationaleMessage() {
         new AlertDialog.Builder(this, R.style.AppTheme_MaterialDialogStyle)
                 .setTitle(R.string.storage_access_title)
-                .setMessage(R.string.storage_access_rationale_message)
+                .setMessage("storage_access_rationale_message")
                 .setPositiveButton(R.string.storage_access_ok_button, (dialog, which) -> shotDetailsPresenter.onDownloadImageClicked())
                 .show();
     }
